@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerador de Prompts - C.O.R.P.O & P.R.O.M.P.T</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<!-- Parte 1 - Corpo da Página -->
+<body>
+
+<!-- Parte 2 - Nome da Página-->
+  <header>
+    <h1>Gerador de Prompts</h1>
+    <h2>C.O.R.P.O & P.R.O.M.P.T</h2>
+  </header>
+
+<!-- Parte 3 - Caixas que descrevem a Página: Estruturas (Corpo e Prompt)-->
+
+  <main>
+    <section class="estrutura">
+      <div class="formulario">
+        <h3>Estrutura C.O.R.P.O</h3>
+
+        <label>Contexto:</label>
+        <textarea id="contexto" placeholder="Descreva o contexto..."></textarea>
+
+        <label>Objetivo:</label>
+        <textarea id="objetivo" placeholder="Qual é o objetivo?"></textarea>
+
+        <label>Regras:</label>
+        <textarea id="regras" placeholder="Defina as regras..."></textarea>
+
+        <label>Persona:</label>
+        <textarea id="persona" placeholder="Quem é o público?"></textarea>
+
+        <label>Output:</label>
+        <textarea id="output" placeholder="Qual o resultado esperado?"></textarea>
+      </div>
+
+      <div class="formulario">
+        <h3>Estrutura P.R.O.M.P.T</h3>
+
+        <label>Propósito:</label>
+        <textarea id="proposito" placeholder="Explique o propósito..."></textarea>
+
+        <label>Requisitos:</label>
+        <textarea id="requisitos" placeholder="Liste os requisitos..."></textarea>
+
+        <label>Orientações:</label>
+        <textarea id="orientacoes" placeholder="Instruções específicas..."></textarea>
+
+        <label>Modelo:</label>
+        <textarea id="modelo" placeholder="Modelo desejado..."></textarea>
+
+        <label>Parâmetros:</label>
+        <textarea id="parametros" placeholder="Configurações adicionais..."></textarea>
+
+        <label>Tarefa:</label>
+        <textarea id="tarefa" placeholder="O que o modelo deve fazer?"></textarea>
+      </div>
+    </section>
+
+    <!-- Parte nova - Geração automática e Limpeza -->
+<section class="gerar-auto">
+  <input type="text" id="nomePrompt" placeholder="Digite o nome ou tema do prompt...">
+  <button id="gerarAutomatico">✨ Gerar Automático</button>
+  <button id="temaAleatorio">🎲 Tema Aleatório</button>
+  <button id="limparCampos">🧹 Limpar Campos</button>
+</section>
+
+
+<!-- Parte 4 - Botões --> 
+    <div class="botoes">
+      <button id="gerar">Gerar Prompt</button>
+      <button id="copiar">Copiar</button>
+      <button id="baixar">Baixar .txt</button>
+      <button id="exportar">Exportar JSON</button>
+      <button id="aleatorio">Aleatório</button>
+      <button id="exemplo">Exemplo</button>
+      <button id="modoEscuro">🌙 Modo Escuro</button>
+    </div>
+
+<!-- Parte 5 - Parte e Caixa  que descrevem o Resultado -->
+    <section id="resultado">
+      <h3>Resultado do Prompt</h3>
+      <textarea id="outputPrompt" readonly></textarea>
+    </section>
+  </main>
+
+<!-- Perte 6 - Parte que descreve quem são os Responsáveis! -->
+  <footer>
+    <p>Desenvolvido por estudante DEVCLUB | Daniel Ferreira de Almeida Silva - Inspirado por Rodolfo Mori</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
